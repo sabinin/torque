@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Torque Control</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description"content="" />
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="icon.ico"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- for IE9 -->
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- end -->
+</head>
+<body>
+</body>
+    <header>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="logo" src="img/endv.png">
+        </div>
+         <div class="col-md-3">
+            <a href="/torque/newwork.html"><button type="button" class="btn btn-success">Створити нову роботу</button></a>
+        </div>
+        <div class="col-md-3">
+             <a href="/torque/index.html">
+            <button type="button" class="btn btn-success">Продовжити останню роботу</button>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <div class="dropdown">
+              <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Вибрати мову
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Українська</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="row">
+                <form>
+        <div class="col-md-6">
+            <h1 class="text-center">Параметри графіка</h1>
+
+              <div class="form-group">
+                <label for="maxTorque">Максимальний момент</label>
+                <input type="number" class="form-control" id="maxTorque" placeholder="Максимальний момент">
+              </div>
+              <div class="form-group">
+                <label for="optTorque">Оптимальний момент</label>
+                <input type="number" class="form-control" id="optTorque" placeholder="Оптимальний момент">
+              </div>
+              <div class="form-group">
+                <label for="minTorque">Мінімальний момент</label>
+                <input type="number" class="form-control" id="minTorque" placeholder="Мінімальний момент">
+              </div>
+              <div class="form-group">
+                <label for="maxTorqueStop">Максимальний момент упору</label>
+                <input type="number" class="form-control" id="maxTorqueStop" placeholder="Максимальний момент упору">
+              </div>
+              <div class="form-group">
+                <label for="minTorqueStop">Мінімальний момент упору</label>
+                <input type="number" class="form-control" id="minTorqueStop" placeholder="Мінімальний момент упору">
+              </div>
+              <div class="form-group">
+                <label for="startTorque">Момент початку</label>
+                <input type="number" class="form-control" id="startTorque" placeholder="Момент початку">
+              </div>
+              <div class="form-group">
+                <label for="units">Одиниці виміру</label>
+                <input type="text" class="form-control" id="units" placeholder="Одиниці виміру">
+              </div>
+        </div>
+        <div class="col-md-6">
+        <h1 class="text-center">Параметри колони</h1>
+
+              <div class="form-group">
+                <label for="columnLeng">Довжина колони</label>
+                <input type="number" class="form-control" id="columnLeng" placeholder="Довжина колони">
+              </div>
+              <div class="form-group">
+                <label for="columnDiam">Діаметр колони</label>
+                <input type="number" class="form-control" id="columnDiam" placeholder="Діаметр колони">
+              </div>
+            <button type="submit" class="btn first-button btn-default">Зберегти</button>
+            <a href="#">
+                <button type="submit" class="btn first-button btn-default">Згвинчування / Розкручування</button>
+            </a>
+             <a href="#">
+                <button type="submit" class="btn first-button btn-default">Завершено</button>
+            </a>
+        </div>
+      </form>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>

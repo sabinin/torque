@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Torque Control</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description"content="" />
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="icon.ico"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- for IE9 -->
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- end -->
+</head>
+<body>
+</body>
+    <header>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="logo" src="img/endv.png">
+        </div>
+         <div class="col-md-3">
+            <a href="/torque/newwork.html"><button type="button" class="btn btn-success">Створити нову роботу</button></a>
+        </div>
+        <div class="col-md-3">
+             <a href="/torque/index.html">
+            <button type="button" class="btn btn-success">Продовжити останню роботу</button>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <div class="dropdown">
+              <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Вибрати мову
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Українська</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+    <h1 class="text-center">Картка нової роботи</h1>
+    <div class="row">
+                <form>
+        <div class="col-md-6">
+              <div class="form-group">
+                <label for="nameOfWork">Назва роботи</label>
+                <input type="text" class="form-control" id="nameOfWork" placeholder="Назва роботи">
+              </div>
+              <div class="form-group">
+                <label for="customer">Родовище</label>
+                <input type="text" class="form-control" id="customer" placeholder="Родовище">
+              </div>
+              <div class="form-group">
+                <label for="field">Замовник</label>
+                <input type="text" class="form-control" id="field" placeholder="Замовник">
+              </div>
+              <div class="form-group">
+                <label for="well">№ свердловини</label>
+                <input type="text" class="form-control" id="well" placeholder="№ свердловини">
+              </div>
+              <div class="form-group">
+                <label for="producer">Виробник труб</label>
+                <input type="text" class="form-control" id="producer" placeholder="Виробник труб">
+              </div>
+              <div class="form-group">
+                <label for="producer">Примітки</label>
+                <input type="tips" class="form-control" id="tips" placeholder="Примітки">
+              </div>
+              <div class="form-group">
+                <label for="date">Дата початку</label>
+                <input type="date" class="form-control" id="date" placeholder="Дата початку">
+              </div>
+              <div class="form-group">
+                <label for="customerIntendant">Представник замовника</label>
+                <input type="text" class="form-control" id="customerIntendant" placeholder="Представник замовника">
+              </div>
+              <div class="form-group">
+                <label for="supervizer">Супервайзер</label>
+                <input type="text" class="form-control" id="supervizer" placeholder="Супервайзер">
+              </div>
+              <div class="form-group">
+                <label for="operators">Оператори</label>
+                <input type="text" class="form-control" id="operators" placeholder="Оператори">
+              </div>
+        </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn first-button btn-default">Зберегти</button>
+            <div class="row">
+                <a href="/torque/screwing.html" class="btn first-button btn-default">
+                    Згвинчування / Розкручування
+                </a>
+            </div>
+            <div class="row">
+                 <a href="#" class="btn first-button btn-default">
+                    Завершено
+                </a>
+            </div>
+        </div>
+      </form>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>
